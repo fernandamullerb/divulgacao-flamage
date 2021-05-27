@@ -2,42 +2,41 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Flamage</title>
+  <meta charset="UTF-8">
+  <title>Flamage</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 
 <body>
-    <header>
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-                <h5 class="text-white h4">Collapsed content</h5>
-                <span class="text-muted">Toggleable via the navbar brand.</span>
-            </div>
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-flamage">
+      <div class="container-fluid">
+        <a href="#"><img src="/img/logo.png" alt="Flamage" height="40" width="125"></a>
+        
+          <div class="navbar-nav">
+            <a class="nav-link active justify-content-end" href="about">Saiba Mais</a>
+            <a class="nav-link active justify-content-end" href="prices">Preços</a>
+            <a class="nav-link active justify-content-end" href="contact">Contato</a>
+          </div>
         </div>
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
+      </div>
+    </nav>
 
-    </header>
+  </header>
 
-    <main>
-        <div class="container">
-            <%- body %>
-        </div>
-    </main>
+  <main>
+    <div class="container">
+      <%- body %>
+    </div>
+  </main>
 
-    <footer>
-        Flamage
-    </footer>
+  <footer>
+    Flamage ®
+  </footer>
 </body>
 
 </html>
