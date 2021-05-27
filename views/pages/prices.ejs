@@ -1,4 +1,4 @@
-<%- contentFor('body') %>
+<%- contentFor('body', {title: 'Preços' }) %>
 
     <div class="text-center">
         <h2>Monte seu Pacote</h2><br>
@@ -19,7 +19,7 @@
                     <li>Fale conosco e saiba mais <br>
                         sobre como podemos ajudá-lo(a)!</li>
                 </ul>
-                <a href="contact"><button class="btn text" type="button"">Contratar</button></a>
+                <a href="contact"><button class="btn text" type="button">Contratar</button></a>
             </div>
         </div>
 
@@ -33,8 +33,8 @@
                                     Lançamento de receitas e despesas
                                 </div>
                                 <div class="col-md-1">
-                                    <input class="form-check-input" type="checkbox" id="1" name="lancamento"
-                                        value="lancamento">
+                                    <input class="form-check-input" type="checkbox" id="1" name="feature"
+                                        value="lancamento" action="prices" method="POST">
                                 </div>
                             </div>
                         </div>
@@ -45,7 +45,7 @@
                                     Consulta e impressão de receitas e despesas
                                 </div>
                                 <div class="col-md-1">
-                                    <input class="form-check-input" type="checkbox" id="2" name="consulta"
+                                    <input class="form-check-input" type="checkbox" id="2" name="feature"
                                         value="consulta">
                                 </div>
                             </div>
@@ -57,7 +57,7 @@
                                     Dashboard de balanço financeiro
                                 </div>
                                 <div class="col-md-1">
-                                    <input class="form-check-input" type="checkbox" id="3" name="dashboard"
+                                    <input class="form-check-input" type="checkbox" id="3" name="feature"
                                         value="dashboard">
                                 </div>
                             </div>
@@ -69,7 +69,7 @@
                                     Personalização de formas de pagamento aceitas
                                 </div>
                                 <div class="col-md-1">
-                                    <input class="form-check-input" type="checkbox" id="4" name="pagamento"
+                                    <input class="form-check-input" type="checkbox" id="4" name="feature"
                                         value="pagamento">
                                 </div>
                             </div>
@@ -81,7 +81,7 @@
                                     Simulação de parcelamento com taxas de juros
                                 </div>
                                 <div class="col-md-1">
-                                    <input class="form-check-input" type="checkbox" id="5" name="simulacao"
+                                    <input class="form-check-input" type="checkbox" id="5" name="feature"
                                         value="simulacao">
                                 </div>
                             </div>
@@ -93,7 +93,7 @@
                                     Configuração de reserva de caixa
                                 </div>
                                 <div class="col-md-1">
-                                    <input class="form-check-input" type="checkbox" id="6" name="reserva"
+                                    <input class="form-check-input" type="checkbox" id="6" name="feature"
                                         value="reserva">
                                 </div>
                             </div>
@@ -105,7 +105,7 @@
                                     Permissões de acesso por usuário
                                 </div>
                                 <div class="col-md-1">
-                                    <input class="form-check-input" type="checkbox" id="7" name="permissoes"
+                                    <input class="form-check-input" type="checkbox" id="7" name="feature"
                                         value="permissoes">
                                 </div>
                             </div>
@@ -117,7 +117,7 @@
                                     Auditoria de lançamentos, edições e exclusões
                                 </div>
                                 <div class="col-md-1">
-                                    <input class="form-check-input" type="checkbox" id="8" name="auditoria"
+                                    <input class="form-check-input" type="checkbox" id="8" name="feature"
                                         value="auditoria">
                                 </div>
                             </div>
@@ -129,7 +129,7 @@
                                     Plataforma personalizada com a sua marca
                                 </div>
                                 <div class="col-md-1">
-                                    <input class="form-check-input" type="checkbox" id="9" name="marca" value="marca">
+                                    <input class="form-check-input" type="checkbox" id="9" name="feature" value="marca">
                                 </div>
                             </div>
                         </div>
@@ -140,7 +140,7 @@
                                     Emissão de boletos - <span>Em breve</span>
                                 </div>
                                 <div class="col-md-1">
-                                    <input class="form-check-input" type="checkbox" id="10" name="boletos"
+                                    <input class="form-check-input" type="checkbox" id="10" name="feature"
                                         value="boletos" disabled>
                                 </div>
                             </div>
@@ -152,7 +152,7 @@
                                     Emissão de notas fiscais - <span>Em breve</span>
                                 </div>
                                 <div class="col-md-1">
-                                    <input class="form-check-input" type="checkbox" id="11" name="nf" value="nf"
+                                    <input class="form-check-input" type="checkbox" id="11" name="feature" value="nf"
                                         disabled>
                                 </div>
                             </div>
@@ -164,7 +164,7 @@
                                     Central de cobranças - <span>Em breve</span>
                                 </div>
                                 <div class="col-md-1">
-                                    <input class="form-check-input" type="checkbox" id="12" name="cobrancas"
+                                    <input class="form-check-input" type="checkbox" id="12" name="feature"
                                         value="cobrancas" disabled>
                                 </div>
                             </div>
@@ -176,7 +176,7 @@
                                     Controle de estoque - <span>Em breve</span> <!--Refatorar-->
                                 </div>
                                 <div class="col-md-1">
-                                    <input class="form-check-input" type="checkbox" id="13" name="estoque"
+                                    <input class="form-check-input" type="checkbox" id="13" name="feature"
                                         value="estoque" disabled> <!--Refatorar-->
                                 </div>
                             </div>
