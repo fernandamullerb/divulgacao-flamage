@@ -34,6 +34,20 @@ footer{
     color: rgb(133, 133, 133)
 }
 
+.value {
+    padding: 30px;
+    font-weight: bold;
+}
+
+.mx-auto {
+    margin: 20px;
+}
+
+.btn {
+    background-color:#062E51;
+    color:white;
+}
+
 span {
     font-style: italic;
 }
