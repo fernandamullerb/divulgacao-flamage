@@ -24,17 +24,5 @@ app.get('/prices', (req, res) => {
     res.render('pages/prices');
 });
 
-app.post('/prices', (req, res) => {
-
-    var feature = req.body.feature 
-
-        if (feature = true) {
-            const totalPrice = Math.ceil(totalPrice + featurePrice)
-        }
-
-        res.render('pages/prices', totalPrice);
-});
-
-
 app.listen(3333);
 console.log('3333 is the magic port');
