@@ -77,14 +77,6 @@ hr {
     margin: 1px; 
 }
 
-.container-saiba-mais {
-    margin-top: 50px;
-}
-
-#esquerda-saiba-mais{
-    width: 50%;
-}
-
 #titulo-saiba-mais{
     color: #FF7600;
 }
@@ -96,10 +88,13 @@ hr {
 
 #texto-titulo-saiba-mais{
     font-size: 35px;
+    text-align: justify;
 }
 
-.img-class {
-    position: absolute;
-    left: 65rem;
-    bottom: 390px;
+.imgesp{
+    margin-top: 50px;
+}
+
+.espaco{
+    width: 10%;
 }
