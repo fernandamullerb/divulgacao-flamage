@@ -19,6 +19,10 @@ body{
     background-color: var(--background);
 }
 
+body, input, textarea, button{
+    font: 400 1rem "Quicksand", sans-serif;
+}
+
 main{
     min-height: 500px;
     padding: 50px;
