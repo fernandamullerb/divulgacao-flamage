@@ -1,0 +1,47 @@
+
+.features {
+    margin-right: 45%;
+}
+
+.features-items {
+    padding-right: 3%;
+    padding-left: 4%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    
+}
+
+.box-value {
+    position: absolute;
+    margin-left: 55%;
+    margin-top: 9%;
+    margin-bottom: 8%;
+}
+
+.disabled {
+    color: var(--gray-dark);
+}
+
+.value {
+    padding: 30px;
+}
+
+.btn {
+    background-color:var(--orange);
+    color:var(--white);
+}
+
+.container-fluid {
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+span {
+    font-style: italic;
+    font-size: small;
+}
+
+hr {
+    margin: 1px; 
+}

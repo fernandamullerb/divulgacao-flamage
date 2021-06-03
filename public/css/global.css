@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white:#FFFFFF;
+    --orange:#FF7616;
+    --blue:#062E51;
+    --gray-dark:#545454;
+    --gray-light:#E5E5E5;
+    --background: #F1F1F1;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--background);
+}
+
+main{
+    min-height: 500px;
+    padding: 50px;
+}
+
+header .navbar{
+    border-radius: 0;
+    margin: 0;
+}
+
+footer{
+    padding: 25px;
+    font-size: 14px;
+    color: var(--gray-light);
+    background: var(--blue);
+    text-align: center;
+}
+
+.bg-flamage {
+    background-color: var(--blue);
+}
+
+.text-flamage {
+    color: var(--blue);
+}
+

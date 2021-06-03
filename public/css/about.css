@@ -1,0 +1,38 @@
+#titulo-saiba-mais{
+    color: var(--orange);
+}
+
+.texto-saiba-mais{
+    text-align: justify;
+    font-size: 24px;
+}
+
+#texto-titulo-saiba-mais{
+    font-size: 35px;
+    text-align: justify;
+}
+
+.align-saiba-mais{
+    display: flex;
+}
+
+.esquerda-saiba-mais{
+    width: 60%;
+    margin-right: 80px;
+}
+
+.imgesp{
+    margin-top: 50px;
+}
+
+.espaco{
+    width: 10%;
+}
+
+@media only screen and (max-width: 400px) {
+    .imgespp {
+        width: 300px;
+        height: 200px;
+        padding: 2rem 1.5rem 2rem 1.5rem;
+    }
+  }
