@@ -91,6 +91,15 @@ hr {
     text-align: justify;
 }
 
+.align-saiba-mais{
+    display: flex;
+}
+
+.esquerda-saiba-mais{
+    width: 60%;
+    margin-right: 80px;
+}
+
 .imgesp{
     margin-top: 50px;
 }
