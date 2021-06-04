@@ -17,8 +17,8 @@
 }
 
 .esquerda-saiba-mais{
-    width: 60%;
-    margin-right: 80px;
+    width: 40%;
+margin: auto;
 }
 
 .imgesp{
@@ -27,6 +27,18 @@
 
 .espaco{
     width: 10%;
+}
+
+.espaco-sections1{
+    height: 100px;
+}
+
+.espaco-sections3{
+    height: 200px;
+}
+
+.espaco-sections2{
+    height: 400px;
 }
 
 @media only screen and (max-width: 400px) {
