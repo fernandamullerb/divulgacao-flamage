@@ -1,0 +1,78 @@
+<%- contentFor('body', {title: 'Contato' }) %>
+<link rel="stylesheet" type="text/css" href="/css/contact.css">
+
+<h3>Entre em contato com nossos especialistas e encontre a gestão que seu negócio precisa!</h3>
+<div id="container">
+
+    <div class="imgContainer">
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_5terre.jpg">
+            <img src="https://github.com/reuel-freitas.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc">Reuel Freitas</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_forest.jpg">
+            <img src="https://github.com/fernandamullerb.png" alt="Forest" width="600" height="400">
+          </a>
+          <div class="desc">Fernanda Müller</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_lights.jpg">
+            <img src="https://github.com/williamrobertF.png" alt="Northern Lights" width="600" height="400">
+          </a>
+          <div class="desc">William Robert</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img_mountains.jpg">
+            <img
+              src="https://github.com/CaitoCF.png"
+              alt="Mountains" width="600" height="400">
+          </a>
+          <div class="desc">Caio Caldeira</div>
+        </div>
+      </div>
+    </div>
+
+    <form action="contact" method="post">
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="1"></input>
+        <label for="exampleFormControlTextarea1" class="form-label">Sobrenome</label>
+        <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <label for="exampleFormControlTextarea1" class="form-label">Telefone</label>
+        <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="1"
+          placeholder="(DDD) 99999-9999"></s>
+        <label for="exampleFormControlTextarea1" class="form-label">Empresa</label>
+        <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea><br />
+        Deseja acompanhamento com uma equipe contábil?
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            Sim
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Não
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary" id="btnSubmit">Enviar</button>
+      </div>
+    </form>
+
+  
+</div>
