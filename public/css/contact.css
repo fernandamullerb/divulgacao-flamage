@@ -13,15 +13,7 @@ form {
   display: inline-block
 }
 
-h3:first-of-type {
-  margin-top: 1rem;
-  text-align: center;
-  font-weight: 600;
-  font-size: 2.5rem;
-  width: 100%;
-}
-
-h3{
+h3 {
   margin-top: 1rem;
   text-align: center;
   font-weight: 600;
@@ -31,10 +23,12 @@ h3{
 #btnSubmit {
   margin-top: 10px; 
   margin-left: 13rem;
+  
+  background-color:var(--orange);
+  color:var(--white);
 }
 
 .imgContainer {
-  white-space: nowrap;
   margin-top: 2rem;
   column-gap: 2rem;
   width: 100%;
@@ -44,24 +38,18 @@ h3{
 
   
 .gallery img {
-  margin-bottom: 1rem;
   border-radius: 75%;
   width: 8.5rem;
   height: auto;
 }
   
 .desc {
-  white-space: nowrap;
-  text-align: justify;
+  width: 100%;
+  margin: 1rem;
+  text-align: center;
   font-size: 18px;
   font-weight: 500;
   color: var(--blue);
-  width: 100%;
-  padding: 0;
-}
-
-p {
-  
 }
   
 * {
@@ -70,6 +58,7 @@ p {
   
 .responsive {
   padding: 0 6px;
+  width: 1rem;
 }
 
 @media only screen and (max-width: 700px) {
@@ -85,3 +74,13 @@ p {
   }
 }
 
+.SaibaMais{
+  font-size: 9px;
+  font-weight: 600;
+  color: #062E51;
+  margin-left: 1rem;
+}
+
+a:hover{
+  text-decoration: underline;
+}

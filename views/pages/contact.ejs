@@ -1,77 +1,90 @@
 <%- contentFor('body', {title: 'Contato' }) %>
 <link rel="stylesheet" type="text/css" href="/css/contact.css">
-<h3>Encontre a gestão que seu negócio precisa!</h3>
-<h3>Entre em contato com nossos especialistas.</h3>
-<div id="container">
+
+<h3>Entre em contato com nossos especialistas e encontre a gestão que seu negócio precisa!</h3>
+<div id="container">  
 
     <div class="imgContainer">
       <div class="responsive">
         <div class="gallery">
-          <a target="_blank" href="img_5terre.jpg">
+          <a target="_blank" href="https://wa.me/5574991539659">
             <img src="https://github.com/reuel-freitas.png" alt="Cinque Terre" width="600" height="400">
           </a>
-          <p class="desc">Reuel Freitas</p>
+          <div class="desc">Reuel Freitas</div>
         </div>
       </div>
 
       <div class="responsive">
         <div class="gallery">
-          <a target="_blank" href="img_forest.jpg">
+          <a target="_blank" href="https://wa.me/5571993356024">
             <img src="https://github.com/fernandamullerb.png" alt="Forest" width="600" height="400">
           </a>
-          <p class="desc">Fernanda Müller</p>
+          <div class="desc">Fernanda Müller</div>
         </div>
       </div>
 
       <div class="responsive">
         <div class="gallery">
-          <a target="_blank" href="img_lights.jpg">
+          <a target="_blank" href="https://wa.me/5571994084093">
             <img src="https://github.com/williamrobertF.png" alt="Northern Lights" width="600" height="400">
           </a>
-          <p class="desc">William Robert</p>
+          <div class="desc">William Robert</div>
         </div>
       </div>
 
       <div class="responsive">
         <div class="gallery">
-          <a target="_blank" href="img_mountains.jpg">
+          <a target="_blank" href="https://wa.me/5571993116437">
             <img
               src="https://github.com/CaitoCF.png"
               alt="Mountains" width="600" height="400">
           </a>
-          <p class="desc">Caio Caldeira</p>
+          <div class="desc">Caio Caldeira</div>
         </div>
       </div>
     </div>
 
-    <form action="contact" method="post">
+    
+
+    <form action="/contact" method="post">
       <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Nome</label>
-        <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="1"></input>
+        <input type="text" name="firstName" class="form-control" id="exampleFormControlTextarea1" rows="1"></input>
         <label for="exampleFormControlTextarea1" class="form-label">Sobrenome</label>
-        <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+        <input type="text" name="lastName" class="form-control" id="exampleFormControlTextarea1" rows="1"></input>
         <label for="exampleFormControlInput1" class="form-label">Email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         <label for="exampleFormControlTextarea1" class="form-label">Telefone</label>
-        <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="1"
+        <input type="text" id="phone" name="phone" class="form-control" id="exampleFormControlTextarea1" rows="1"
           placeholder="(DDD) 99999-9999"></s>
         <label for="exampleFormControlTextarea1" class="form-label">Empresa</label>
-        <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea><br />
-        Deseja acompanhamento com uma equipe contábil?
+        <input type="text" name="company" class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea><br />
+        Deseja acompanhamento com uma equipe contábil?<br/><br/> 
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-          <label class="form-check-label" for="exampleRadios1">
-            Sim
-          </label>
+          <input class="form-check-input" type="radio" name="contador" id="cont" value="Sim">
+          <span><label class="form-check-label" for="contador">
+            Sim, eu desejo.
+          </label><a class="SaibaMais" href="#">(Saiba mais)</a></span>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-          <label class="form-check-label" for="exampleRadios2">
-            Não
+          <input class="form-check-input" type="radio" name="contador" id="noCont" value="Nao">
+          <label class="form-check-label" for="contador">
+            Não, eu já tenho contador.
           </label>
         </div>
-        <button type="submit" class="btn btn-primary" id="btnSubmit">Enviar</button>
-      </div>
+        
+        <% if(typeof alert != 'undefined'){ %>
+          <% alert.forEach(function(error){ %>  
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+              <%= error.msg %>
+              <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>  
+              </button>       
+            </div>
+          <% }) %> 
+        <% } %> 
+        <button type="submit" class="btn btn-text" id="btnSubmit">Enviar</button>
+      </div> 
     </form>
 
   
