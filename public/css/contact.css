@@ -74,7 +74,7 @@ h3 {
   }
 }
 
-.SaibaMais{
+#SaibaMais{
   font-size: 9px;
   font-weight: 600;
   color: #062E51;
@@ -83,4 +83,9 @@ h3 {
 
 a:hover{
   text-decoration: underline;
+}
+
+.btn {
+  background-color:var(--orange);
+  color:var(--white);
 }
