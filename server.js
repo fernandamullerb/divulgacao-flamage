@@ -62,7 +62,7 @@ app.post("/contact",
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       const alert = errors.array();
-      res.send("pages/contact", { alert });
+      res.render("pages/contact", { alert });
     } else {
       var nome = req.body.firstName;
       var sobrenome = req.body.lastName;
