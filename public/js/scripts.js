@@ -1,8 +1,8 @@
 var price = document.getElementById("price")
 var featurePrice = 0;
+var lancamento = document.getElementById("1");
 document.getElementById('price').textContent = `R$ ${featurePrice},00`
 
-var lancamento = document.getElementById("1");
 lancamento.addEventListener('change', function() {
     if(this.checked) {
         featurePrice += 10;
