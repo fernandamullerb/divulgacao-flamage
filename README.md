@@ -13,7 +13,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Express
 
 ## 😄 Equipe
-Fernanda Müller
-Reuel Freitas
-Caio Caldeira
+Fernanda Müller<br>
+Reuel Freitas<br>
+Caio Caldeira<br>
 William Robert
