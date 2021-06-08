@@ -62,7 +62,7 @@ app.post("/contact",
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       const alert = errors.array();
-      res.render("pages/contact", { alert });
+      res.send("pages/contact", { alert });
     } else {
       var nome = req.body.firstName;
       var sobrenome = req.body.lastName;
@@ -97,3 +97,4 @@ app.get("/prices", (req, res) => {
 
 app.listen(3333);
 console.log("3333 is the magic port");
+
