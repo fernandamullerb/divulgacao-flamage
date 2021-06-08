@@ -1,8 +1,8 @@
 var price = document.getElementById("price")
-var lancamento = document.getElementById("1");
 var featurePrice = 0;
 document.getElementById('price').textContent = `R$ ${featurePrice},00`
 
+var lancamento = document.getElementById("1");
 lancamento.addEventListener('change', function() {
     if(this.checked) {
         featurePrice += 10;
@@ -14,7 +14,6 @@ lancamento.addEventListener('change', function() {
 });
 
 var consulta = document.getElementById("2");
-
 consulta.addEventListener('change', function() {
     if(this.checked) {
         featurePrice += 8;
@@ -26,7 +25,6 @@ consulta.addEventListener('change', function() {
 });
 
 var dashboard = document.getElementById("3");
-
 dashboard.addEventListener('change', function() {
     if(this.checked) {
         featurePrice += 15;
@@ -38,7 +36,6 @@ dashboard.addEventListener('change', function() {
 });
 
 var pagamento = document.getElementById("4");
-
 pagamento.addEventListener('change', function() {
     if(this.checked) {
         featurePrice += 5;
@@ -49,8 +46,18 @@ pagamento.addEventListener('change', function() {
     }
 });
 
-var reserva = document.getElementById("6");
+var simulacao = document.getElementById("5");
+simulacao.addEventListener('change', function() {
+    if(this.checked) {
+        featurePrice += 8;
+        document.getElementById('price').textContent = `R$ ${featurePrice},00`
+    } else {
+        featurePrice -= 8;
+        document.getElementById('price').textContent = `R$ ${featurePrice},00`
+    }
+});
 
+var reserva = document.getElementById("6");
 reserva.addEventListener('change', function() {
     if(this.checked) {
         featurePrice += 5;
@@ -62,7 +69,6 @@ reserva.addEventListener('change', function() {
 });
 
 var permissoes = document.getElementById("7");
-
 permissoes.addEventListener('change', function() {
     if(this.checked) {
         featurePrice += 5;
@@ -74,7 +80,6 @@ permissoes.addEventListener('change', function() {
 });
 
 var auditoria = document.getElementById("8");
-
 auditoria.addEventListener('change', function() {
     if(this.checked) {
         featurePrice += 5;
@@ -86,13 +91,12 @@ auditoria.addEventListener('change', function() {
 });
 
 var marca = document.getElementById("9");
-
 marca.addEventListener('change', function() {
     if(this.checked) {
-        featurePrice += 5;
+        featurePrice += 7;
         document.getElementById('price').textContent = `R$ ${featurePrice},00`
     } else {
-        featurePrice -= 5;
+        featurePrice -= 7;
         document.getElementById('price').textContent = `R$ ${featurePrice},00`
     }
 });
