@@ -1,0 +1,57 @@
+.flame {
+    width: 50%;
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
+    z-index: -1;
+}
+
+.start span {
+    font-size: 4.75rem;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.start p {
+    margin-top: 2rem;
+    color: var(--blue);
+    display: column;
+    width: 20rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.show {
+    font-weight: 500;
+    color: var(--blue);
+    margin: auto;
+    font-size: 2rem;
+    width: 100%;
+    margin-top: 35rem;
+    column-count: 3;
+    column-gap: 4rem;
+}
+
+@media(max-width: 1080px){
+    html{
+        font-size: 87.5%;
+    }
+}
+
+@media(max-width: 720px){
+    html{
+        font-size: 73.75%;
+    }
+}
+
+@media(max-width: 600px){
+    .show {
+        column-count: 1;
+    }
+}
+
+@media(max-width: 500px){
+    html{
+        font-size: 57.5%;
+    }
+}
