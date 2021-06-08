@@ -11,3 +11,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - NodeJS
 - EJS
 - Express
+
+## 😄 Equipe
+Fernanda Müller
+Reuel Freitas
+Caio Caldeira
+William Robert
