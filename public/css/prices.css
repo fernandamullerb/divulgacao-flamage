@@ -1,5 +1,6 @@
 
 .features {
+    z-index: -1;
     margin-right: 45%;
 }
 
@@ -12,6 +13,7 @@
 }
 
 .box-value {
+    z-index: -1;
     position: absolute;
     margin-left: 55%;
     margin-top: 9%;
@@ -36,6 +38,15 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.card-header {
+    background-color: var(--blue);
+}
+
+.blue {
+    color: var(--blue);
+}
+
 
 span {
     font-style: italic;
