@@ -64,7 +64,8 @@
           <input class="form-check-input" type="radio" name="contador" id="cont" value="Sim">
           <span><label class="form-check-label" for="contador">
             Sim, eu desejo.
-          </label><a class="SaibaMais" href="#">(Saiba mais)</a></span>
+          </label>
+          <a id="SaibaMais" href="#" data-bs-toggle="modal" data-bs-target="#infoModal">Saiba mais</a></span>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="contador" id="noCont" value="Nao">
@@ -77,8 +78,8 @@
           <% alert.forEach(function(error){ %>  
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
               <%= error.msg %>
-              <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>  
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span>X</span>  
               </button>       
             </div>
           <% }) %> 
@@ -87,5 +88,21 @@
       </div> 
     </form>
 
+    <div id="infoModal" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, doloremque! Itaque ad, laudantium dolorum placeat sunt aliquam a eligendi porro, autem odio accusamus. Beatae pariatur quaerat nobis laborum a fuga!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-text" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
   
 </div>
