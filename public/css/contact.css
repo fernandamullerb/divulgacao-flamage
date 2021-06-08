@@ -23,7 +23,7 @@ h3:first-of-type {
 h3{
   color: var(--blue);
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   width: 100%;
   margin-bottom: 2rem;
 }

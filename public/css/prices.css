@@ -1,7 +1,16 @@
 
 .features {
-    z-index: -1;
     margin-right: 45%;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1.75rem;
+    font-weight: 500;
 }
 
 .features-items {
@@ -13,7 +22,6 @@
 }
 
 .box-value {
-    z-index: -1;
     position: absolute;
     margin-left: 55%;
     margin-top: 9%;
