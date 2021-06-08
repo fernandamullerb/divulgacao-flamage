@@ -16,19 +16,27 @@
 <body>
   <header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-flamage">
-      <div class="container-fluid">
-        <a href="/"><img src="/img/logo.png" alt="Flamage" height="40" width="125"></a>
-        
-          <div class="navbar-nav">
-            <a class="nav-link active justify-content-end" href="/">Início</a>
-            <a class="nav-link active justify-content-end" href="about">Saiba Mais</a>
-            <a class="nav-link active justify-content-end" href="prices">Preços</a>
-            <a class="nav-link active justify-content-end" href="contact">Contato</a>
-          </div>
-        </div>
+    <nav class="navbar navbar-expand-sm">
+      <a href="/"><img src="/img/logoContainer.png" alt="Flamage"></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a href="/" class="nav-link" id="home">Início</a>
+              </li>
+              <li class="nav-item">
+                  <a href="about" class="nav-link" id="about">Saiba Mais</a>
+              </li>
+              <li class="nav-item">
+                  <a href="prices" class="nav-link" id="prices">Preços</a>
+              </li>
+              <li class="nav-item">
+                  <a href="contact" class="nav-link" id="contact">Contato</a>
+              </li>
+          </ul>
       </div>
-    </nav>
 
   </header>
 
@@ -40,7 +48,8 @@
   </main>
 
   <footer>
-    Flamage ®
+    <p>Copyright 2021</p>
+    <p>All rights reserved. Powered by the <a href="">Flamage ® Team.</a></p>
   </footer>
 </body>
 
