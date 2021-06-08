@@ -1,5 +1,5 @@
 .flame {
-    width: 50%;
+    width: 40rem;
     position: absolute;
     top: 1rem;
     right: 5rem;
@@ -13,6 +13,7 @@
 }
 
 .start p {
+    text-align: justify;
     margin-top: 2rem;
     color: var(--blue);
     display: column;
@@ -22,35 +23,94 @@
 }
 
 .show {
+    text-align: justify;
     font-weight: 500;
     color: var(--blue);
-    margin: auto;
-    font-size: 2rem;
-    width: 100%;
-    margin-top: 35rem;
-    column-count: 3;
-    column-gap: 4rem;
+    font-size: 1.5rem;
+    width: 30%;
+    margin-top: 30rem;
+    
+}
+
+.show p {
+    margin-top: 4rem;
+}
+
+.show img:first-of-type {
+    margin-top: -40rem;
+    margin-left: 40%;
+    width: 40%;
+    height: auto;
+    border: 1px solid var(--gray-dark);
+
+}
+
+.show img {
+    position: absolute;
+    margin-top: -10rem;
+    margin-left: 40%;
+    width: 40%;
+    height: auto;
+    border: 1px solid var(--gray-dark);
+}
+
+.last-container {
+    display: flex;
+}
+
+h2 {
+    margin-top: 20rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    color: var(--blue)
+}
+
+h3 {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    color: var(--blue);
+}
+
+.img-acess {
+    text-align: center;
 }
 
 @media(max-width: 1080px){
+    .flame {
+        width: 35rem;
+    }
+
     html{
         font-size: 87.5%;
     }
 }
 
 @media(max-width: 720px){
+    .flame {
+        width: 30rem;
+    }
+
     html{
         font-size: 73.75%;
     }
 }
 
 @media(max-width: 600px){
+    .flame {
+        width: 25rem;
+    }
+
     .show {
         column-count: 1;
     }
 }
 
 @media(max-width: 500px){
+    .flame {
+        width: 20rem;
+    }
+
     html{
         font-size: 57.5%;
     }
