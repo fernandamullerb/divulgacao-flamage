@@ -52,6 +52,11 @@ h3{
   width: 8.5rem;
   height: auto;
 }
+
+.btn {
+  background-color:var(--orange);
+  color:var(--white);
+}
   
 .desc {
   white-space: nowrap;
