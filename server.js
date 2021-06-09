@@ -51,10 +51,10 @@ app.post("/contact",
     check("phone", "Este número de telefone não é válido")
       .trim()
       .isNumeric()
-      .withMessage("Phone number must be numeric.")
+      .withMessage("O telefone deve conter apenas números.")
       .bail()
       .isLength({ max: 11, min: 10 })
-      .withMessage("Phone number must be 10 digits long.")
+      .withMessage("O telefone precisa conter entre 10 e 11 dígitos.")
       .bail()
       .isMobilePhone(),
   ],
