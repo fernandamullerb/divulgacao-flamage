@@ -5,10 +5,10 @@ document.getElementById('price').textContent = `R$ ${featurePrice},00`
 
 lancamento.addEventListener('change', function() {
     if(this.checked) {
-        featurePrice += 10;
+        featurePrice += 5;
         document.getElementById('price').textContent = `R$ ${featurePrice},00`
     } else {
-        featurePrice -= 10;
+        featurePrice -= 5;
         document.getElementById('price').textContent = `R$ ${featurePrice},00`
     }
 });
@@ -16,10 +16,10 @@ lancamento.addEventListener('change', function() {
 var consulta = document.getElementById("2");
 consulta.addEventListener('change', function() {
     if(this.checked) {
-        featurePrice += 8;
+        featurePrice += 5;
         document.getElementById('price').textContent = `R$ ${featurePrice},00`
     } else {
-        featurePrice -= 8;
+        featurePrice -= 5;
         document.getElementById('price').textContent = `R$ ${featurePrice},00`
     }
 });
@@ -27,10 +27,10 @@ consulta.addEventListener('change', function() {
 var dashboard = document.getElementById("3");
 dashboard.addEventListener('change', function() {
     if(this.checked) {
-        featurePrice += 15;
+        featurePrice += 5;
         document.getElementById('price').textContent = `R$ ${featurePrice},00`
     } else {
-        featurePrice -= 15;
+        featurePrice -= 5;
         document.getElementById('price').textContent = `R$ ${featurePrice},00`
     }
 });
@@ -49,10 +49,10 @@ pagamento.addEventListener('change', function() {
 var simulacao = document.getElementById("5");
 simulacao.addEventListener('change', function() {
     if(this.checked) {
-        featurePrice += 8;
+        featurePrice += 5;
         document.getElementById('price').textContent = `R$ ${featurePrice},00`
     } else {
-        featurePrice -= 8;
+        featurePrice -= 5;
         document.getElementById('price').textContent = `R$ ${featurePrice},00`
     }
 });
@@ -93,10 +93,10 @@ auditoria.addEventListener('change', function() {
 var marca = document.getElementById("9");
 marca.addEventListener('change', function() {
     if(this.checked) {
-        featurePrice += 7;
+        featurePrice += 5;
         document.getElementById('price').textContent = `R$ ${featurePrice},00`
     } else {
-        featurePrice -= 7;
+        featurePrice -= 5;
         document.getElementById('price').textContent = `R$ ${featurePrice},00`
     }
 });
